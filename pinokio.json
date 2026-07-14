@@ -1,0 +1,8 @@
+{
+  "title": "DocToSpeech (OpenVoice)",
+  "description": "Fully offline document-to-speech converter using OpenVoice V2. Tone color conversion and voice cloning via MeloTTS. Converts EPUB, PDF, DOCX, HTML, and TXT files to audio. No API keys or cloud services required.",
+  "icon": "icon.png",
+  "author": "C0m3b4ck",
+  "license": "MPL-2.0",
+  "repository": "https://github.com/C0m3b4ck/DocToSpeech-OpenVoice"
+}
