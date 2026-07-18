@@ -1,5 +1,5 @@
-# DocToSpeech (OpenVoice) <img src=https://github.com/C0m3b4ck/DocToSpeech-OpenVoice/blob/main/icon.png>
-
+# DocToSpeech (OpenVoice)
+<img src=https://github.com/C0m3b4ck/DocToSpeech-OpenVoice/blob/main/icon.png>
 [![MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](LICENSE)
 [![Pinokio](https://img.shields.io/badge/Platform-Pinokio-FF6B35.svg?style=for-the-badge&logo=pinokio&logoColor=white)](https://pinokio.computer)
 
@@ -19,6 +19,22 @@ Tone color conversion and voice cloning. Automatically downloads checkpoints and
 - 8 GB RAM minimum, 16 GB+ recommended
 - 4 GB GPU VRAM
 - Pinokio
+
+### IMPORTANT COMPATIBILITY NOTE - READ BEFORE USE
+
+**Poppler** is required for PDF text extraction on all platforms. If you plan to process PDF files, you must install Poppler separately — it is **not** included with pip dependencies.
+
+| Platform | Install Command |
+|----------|-----------------|
+| **Linux (Debian/Ubuntu)** | `sudo apt install poppler-utils` |
+| **Linux (Fedora/RHEL)** | `sudo dnf install poppler-utils` |
+| **Linux (Arch)** | `sudo pacman -S poppler` |
+| **macOS** | `brew install poppler` |
+| **Windows** | Download from [poppler-windows releases](https://github.com/oschwartz10612/poppler-windows/releases), extract, and add the `Library/bin` folder to your system PATH |
+
+After installing, verify with: `pdftotext -v`
+
+Without Poppler, PDF documents will fail to load in the Gradio web UI and CLI.
 
 ## Install
 
